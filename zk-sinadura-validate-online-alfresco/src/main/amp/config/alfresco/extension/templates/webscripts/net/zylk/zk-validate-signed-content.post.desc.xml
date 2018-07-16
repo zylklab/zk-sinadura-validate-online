@@ -1,0 +1,8 @@
+<webscript>
+	<shortname>validate</shortname>
+	<description>Validate Signed content</description>
+	<url>/slingshot/doclib/action/validate</url>
+	<format default="json">extension</format>
+	<transaction>required</transaction>
+	<authentication>user</authentication>
+</webscript>

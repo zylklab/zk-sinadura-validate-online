@@ -1,0 +1,46 @@
+<view:view xmlns:view="http://www.alfresco.org/view/repository/1.0"
+    xmlns:cm="http://www.alfresco.org/model/content/1.0" xmlns:app="http://www.alfresco.org/model/application/1.0"
+    xmlns:emailserver="http://www.alfresco.org/model/emailserver/1.0">
+
+    <cm:folder view:childName="cm:Certs">
+        <app:uifacets />
+        <cm:name>Certs</cm:name>
+        <app:icon>space-icon-default</app:icon>
+        <cm:title>Keystore files folder required for sign validation</cm:title>
+        <cm:description></cm:description>
+        <cm:contains>
+	       <cm:content view:childName="cm:cache.jks">
+	         <view:aspects>
+	             <cm:titled />
+	             <cm:author />
+	             <app:inlineeditable />
+	         </view:aspects>
+	         <view:properties>
+	             <app:editInline>false</app:editInline>
+	             <cm:description>Cache keystore file</cm:description>
+	             <cm:content>contentUrl=classpath:alfresco/module/zk-sinadura-validate-online-alfresco/certs/cache.jks|mimetype=application/octet-stream|size=|encoding=UTF-8|locale=es</cm:content>
+	             <cm:title>Cache keystore file</cm:title>
+	             <cm:author>Zylk</cm:author>
+	             <cm:name>cache.jks</cm:name>
+	         </view:properties>
+	         <view:associations></view:associations>
+	      </cm:content>
+	      <cm:content view:childName="cm:trusted.jks">
+             <view:aspects>
+              	<cm:titled />
+              	<cm:author />
+              	<app:inlineeditable />
+             </view:aspects>
+             <view:properties>
+               	<app:editInline>false</app:editInline>
+               	<cm:description>Trusted keystore file</cm:description>
+            	<cm:content>contentUrl=classpath:alfresco/module/zk-sinadura-validate-online-alfresco/certs/trusted.jks|mimetype=application/octet-stream|size=|encoding=UTF-8|locale=es</cm:content>
+             	<cm:title>Trusted keystore file</cm:title>
+             	<cm:author>Zylk</cm:author>
+             	<cm:name>trusted.jks</cm:name>
+         	</view:properties>
+         	<view:associations></view:associations>
+          </cm:content>     
+        </cm:contains>
+    </cm:folder>
+  </view:view>

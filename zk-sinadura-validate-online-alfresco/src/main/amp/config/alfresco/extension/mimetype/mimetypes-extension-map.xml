@@ -1,0 +1,13 @@
+<alfresco-config area="mimetype-map">
+
+	<config evaluator="string-compare" condition="Mimetype Map">
+		<mimetypes>
+
+			<mimetype mimetype="application/sinadura" display="SAR Signature File">
+				<extension>sar</extension>
+			</mimetype>
+
+		</mimetypes>
+	</config>
+
+</alfresco-config>

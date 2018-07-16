@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model name="val:ecm" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+   <!-- Optional meta-data about the model -->   
+   <description>Zylk Validate Signature Model</description>
+   <author>Patricia Yague</author>
+   <version>1.0</version>
+
+   <!-- Imports are required to allow references to definitions in other models -->   
+   <imports>
+      <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+      <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+   </imports>
+
+   <namespaces>
+      <namespace uri="zylk.validate.model" prefix="val"/>
+   </namespaces>
+
+   <aspects>
+   	   <aspect name="val:validable">
+         <title>Validable</title>
+         <properties>
+            <property name="val:info_firma">
+               <title>Info</title> 
+               <type>d:mltext</type>               
+            </property>               
+         </properties>
+      </aspect>        
+   </aspects> 
+
+</model>
