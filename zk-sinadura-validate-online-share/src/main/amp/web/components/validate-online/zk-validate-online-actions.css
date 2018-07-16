@@ -1,0 +1,25 @@
+/* Class for marked rows */ 
+.yui-skin-zylkTheme .yui-dt tr.valid, 
+.yui-skin-zylkTheme .yui-dt tr.valid td, 
+.yui-skin-zylkTheme .yui-dt tr.valid td.yui-dt-asc, 
+.yui-skin-zylkTheme .yui-dt tr.valid td.yui-dt-desc, 
+.yui-skin-zylkTheme .yui-dt tr.valid td.yui-dt-asc, 
+.yui-skin-zylkTheme .yui-dt tr.valid td.yui-dt-desc { 
+     background-color: #D1FDCD; 
+     border-top: 1px solid #CBCBCB;
+}
+
+.yui-skin-zylkTheme .yui-dt tr.invalid, 
+.yui-skin-zylkTheme .yui-dt tr.invalid td,
+.yui-skin-zylkTheme .yui-dt tr.invalid td.yui-dt-asc, 
+.yui-skin-zylkTheme .yui-dt tr.invalid td.yui-dt-desc, 
+.yui-skin-zylkTheme .yui-dt tr.invalid td.yui-dt-asc, 
+.yui-skin-zylkTheme .yui-dt tr.invalid td.yui-dt-desc { 
+     background-color: #FDCDCD; 
+     border-top: 1px solid #CBCBCB;
+}
+
+.toolbar .onActionZKValidateOnline
+{
+   background-image: url(../documentlibrary/actions/zk-validate-online-16.png);
+}

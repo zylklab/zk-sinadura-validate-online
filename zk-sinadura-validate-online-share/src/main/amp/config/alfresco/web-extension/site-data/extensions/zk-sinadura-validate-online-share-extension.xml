@@ -1,0 +1,90 @@
+<extension>
+   <modules>
+      <module>
+         <id>Validate with Sinadura Action</id>
+         <auto-deploy>true</auto-deploy>
+         <version>1.0</version>
+         <configurations>
+
+            <config evaluator="string-compare" condition="DocLibCustom">
+              <dependencies>
+                <js src="components/validate-online/zk-validate-online-actions.js" />
+                <css src="components/validate-online/zk-validate-online-actions.css" />
+              </dependencies>
+            </config>
+
+            <config evaluator="string-compare" condition="DocLibActions">
+              <actions>
+                <action id="zk-validate-online" type="javascript"
+                  label="zk.label.validate.online" icon="zk-validate-online">
+                  <param name="function">onActionZKValidateOnline</param>
+                  <!-- 
+                  <evaluator>zk-evaluator.doclib.action.validateOnline</evaluator>
+                   -->
+                  <permissions>
+                    <permission allow="true">Write</permission>
+                  </permissions>
+                </action>
+              </actions>
+
+              <actionGroups>
+                <actionGroup id="document-browse">
+                  <action index="106" id="zk-validate-online" />
+                </actionGroup>
+                <actionGroup id="document-details">
+                  <action index="107" id="zk-validate-online" />
+                </actionGroup>
+
+              </actionGroups>
+
+            </config>
+
+            <config evaluator="string-compare" condition="DocumentLibrary">
+              <aspects>
+
+                <visible>       
+                  <aspect name="val:validable" />
+                </visible>
+
+                <addable>
+                </addable>
+
+                <removeable>
+                </removeable>
+              </aspects>
+
+              <indicators>
+                <indicator id="zk-validated" index="10">
+                  <evaluator>zk-evaluator.doclib.action.hasValidableAspect</evaluator>
+                </indicator>
+              </indicators>
+
+              <multi-select>
+                    <action type="action-link" id="onActionZKValidateOnline" asset="document" label="menu.selected-items.validate" />
+                  </multi-select>
+            </config>
+
+            <config evaluator="aspect" condition="val:validable">
+              <forms>
+                <form>
+                  <field-visibility>
+                    <show id="val:info_firma" />
+                  </field-visibility>
+                  <appearance>
+                    <set id="firma_panel" appearance="bordered-panel" label-id="zk.label.aspect.sign.info" />
+                    <field id="val:info_firma" set="firma_panel">
+                      <control
+                        template="/org/alfresco/components/form/controls/datatable-control.ftl">
+
+                      </control>
+                    </field>
+                  </appearance>
+                </form>
+              </forms>
+            </config>
+            
+  
+         </configurations>
+      </module>
+   </modules>
+</extension>
