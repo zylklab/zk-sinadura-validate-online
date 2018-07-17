@@ -12,4 +12,4 @@ Preliminary work for Digital Signature Validation for Alfresco Share - Action fo
 - Patricia Yague
 - Alfredo Sanchez
 - Cesar Capillas
-- Douglas C. R. Paes [DGCloud](http://dgcloud.com.br/)
+- Douglas C. R. Paes - [DGCloud](http://dgcloud.com.br)
