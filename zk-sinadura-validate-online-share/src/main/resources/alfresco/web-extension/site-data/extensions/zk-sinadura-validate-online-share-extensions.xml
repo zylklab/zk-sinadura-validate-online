@@ -90,5 +90,16 @@
 
 			</configurations>
 		</module>
+		
+		<module>
+            <id>Document details with information about signatures</id>
+            <auto-deploy>true</auto-deploy>
+            <customizations>
+                <customization>
+                    <targetPackageRoot>org.alfresco</targetPackageRoot>
+                    <sourcePackageRoot>net.zylk</sourcePackageRoot>
+                </customization>
+            </customizations>
+        </module>
 	</modules>
 </extension>

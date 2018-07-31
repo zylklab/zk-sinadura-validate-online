@@ -1,0 +1,6 @@
+<webscript>
+    <shortname>Signatures information</shortname>
+    <description>Shows the electronic signatures information</description>
+    <url>/zylk/components/signatures-info</url>
+    <family>Zylk</family>
+</webscript>
