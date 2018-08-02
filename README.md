@@ -1,16 +1,14 @@
-# Alfresco digital signature information and validation module
+# Digital signature information and validation for Alfresco
 
-This addon shows digital signature information and validate PDF signed documents. The addon provides:
-
-- Actions for validating one or several files in Alfresco Share.
+This addon shows digital signature information and validate PDF and Xades based signed documents. The addon provides actions for validating one or several files in Alfresco Share.
 
 ## Installation and components
 
-- Two AMPs are needed to install in Alfresco repo and Alfresco Share
+Two AMPs are needed to install in Alfresco repository and Alfresco Share
 
 ## Configuration
 
-- Trusted certificates are saved in /Data Dictionary/Certs
+Trusted certificates are saved in /Data Dictionary/Certs
 
 ## Screenshots
 
