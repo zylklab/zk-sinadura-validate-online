@@ -102,7 +102,7 @@
 		<dependency>
 			<groupId>sinadura</groupId>
 			<artifactId>sinaduraCore</artifactId>
-			<version>3.3.17</version>
+			<version>3.3.22</version>
 		</dependency>
     </dependencies>
 
